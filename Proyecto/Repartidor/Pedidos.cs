@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Vista
+namespace Vista.Repartidor
 {
-    public partial class Repartidor : Form
+    public partial class Pedidos : Form
     {
-        public Repartidor()
+        public Pedidos()
         {
             InitializeComponent();
-        }
-
-        private void Repartidor_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

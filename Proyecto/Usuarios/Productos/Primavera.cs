@@ -8,13 +8,20 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Vista
+namespace Vista.Usuarios
 {
-    public partial class Login : Form
+    public partial class Primavera : Form
     {
-        public Login()
+        public Primavera()
         {
             InitializeComponent();
+        }
+
+        private void btnVerano_Click(object sender, EventArgs e)
+        {
+
+
+
         }
     }
 }

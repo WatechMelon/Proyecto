@@ -12,13 +12,15 @@ namespace Proyecto
 {
     public partial class Principal : Form
     {
+        LoginHuerta loginHuerta;
         Usuario FormularioUsuario;
-        Repartidor loginRepartidor;
+        Repartidorr loginRepartidor;
         public Principal()
         {
             InitializeComponent();
             FormularioUsuario = new Usuario();
-            loginRepartidor = new Repartidor();
+            loginRepartidor = new Repartidorr();
+            loginHuerta = new LoginHuerta();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -33,7 +35,9 @@ namespace Proyecto
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            loginHuerta.ShowDialog();
+            this.Show();
         }
 
         private void button3_Click(object sender, EventArgs e)

@@ -46,63 +46,126 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Repartidor\Pedidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Repartidor\Pedidos.Designer.cs">
+      <DependentUpon>Pedidos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Usuarios\Productos\Primavera.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuarios\Productos\Primavera.Designer.cs">
+      <DependentUpon>Primavera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Huerta\LoginHuerta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Huerta\LoginHuerta.Designer.cs">
+      <DependentUpon>LoginHuerta.cs</DependentUpon>
+    </Compile>
     <Compile Include="Principal.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Principal.Designer.cs">
       <DependentUpon>Principal.cs</DependentUpon>
     </Compile>
-    <Compile Include="Repartidor.cs">
+    <Compile Include="Repartidor\Repartidorr.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Repartidor.Designer.cs">
-      <DependentUpon>Repartidor.cs</DependentUpon>
+    <Compile Include="Repartidor\Repartidorr.Designer.cs">
+      <DependentUpon>Repartidorr.cs</DependentUpon>
     </Compile>
-    <Compile Include="Usuarios.cs">
+    <Compile Include="Usuarios\Productos\Estaciones.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Usuarios.Designer.cs">
+    <Compile Include="Usuarios\Productos\Estaciones.Designer.cs">
+      <DependentUpon>Estaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Usuarios\Productos\Invierno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuarios\Productos\Invierno.Designer.cs">
+      <DependentUpon>Invierno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Usuarios\Productos\Otoño.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuarios\Productos\Otoño.Designer.cs">
+      <DependentUpon>Otoño.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Usuarios\Productos\Verano.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuarios\Productos\Verano.Designer.cs">
+      <DependentUpon>Verano.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Usuarios\Usuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuarios\Usuarios.Designer.cs">
       <DependentUpon>Usuarios.cs</DependentUpon>
     </Compile>
-    <Compile Include="Registro.cs">
+    <Compile Include="Usuarios\Registro.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Registro.Designer.cs">
+    <Compile Include="Usuarios\Registro.Designer.cs">
       <DependentUpon>Registro.cs</DependentUpon>
     </Compile>
-    <Compile Include="Login.cs">
+    <Compile Include="Usuarios\Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Login.Designer.cs">
+    <Compile Include="Usuarios\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Login.resx">
+    <EmbeddedResource Include="Huerta\LoginHuerta.resx">
+      <DependentUpon>LoginHuerta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Repartidor\Pedidos.resx">
+      <DependentUpon>Pedidos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuarios\Productos\Primavera.resx">
+      <DependentUpon>Primavera.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuarios\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Principal.resx">
       <DependentUpon>Principal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Repartidor.resx">
-      <DependentUpon>Repartidor.cs</DependentUpon>
+    <EmbeddedResource Include="Repartidor\Repartidorr.resx">
+      <DependentUpon>Repartidorr.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Usuarios.resx">
+    <EmbeddedResource Include="Usuarios\Productos\Estaciones.resx">
+      <DependentUpon>Estaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuarios\Productos\Invierno.resx">
+      <DependentUpon>Invierno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuarios\Productos\Otoño.resx">
+      <DependentUpon>Otoño.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuarios\Productos\Verano.resx">
+      <DependentUpon>Verano.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuarios\Usuarios.resx">
       <DependentUpon>Usuarios.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Registro.resx">
+    <EmbeddedResource Include="Usuarios\Registro.resx">
       <DependentUpon>Registro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -115,6 +178,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Negocio\Negocio.csproj">
+      <Project>{91b74d86-933f-4d82-af43-95647747450c}</Project>
+      <Name>Negocio</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
