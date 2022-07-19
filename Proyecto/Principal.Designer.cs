@@ -29,64 +29,72 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Principal));
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.btnUsuario = new System.Windows.Forms.Button();
+            this.btnRepartidor = new System.Windows.Forms.Button();
+            this.btnHE = new System.Windows.Forms.Button();
+            this.btnClientes = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // btnRepartidor
             // 
-            this.button1.AccessibleName = "";
-            this.button1.Location = new System.Drawing.Point(246, 187);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(274, 112);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "REPARTIDOR";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnRepartidor.AccessibleName = "";
+            this.btnRepartidor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnRepartidor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRepartidor.Location = new System.Drawing.Point(246, 187);
+            this.btnRepartidor.Name = "btnRepartidor";
+            this.btnRepartidor.Size = new System.Drawing.Size(274, 112);
+            this.btnRepartidor.TabIndex = 2;
+            this.btnRepartidor.Text = "REPARTIDOR";
+            this.btnRepartidor.UseVisualStyleBackColor = false;
+            this.btnRepartidor.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // btnHE
             // 
-            this.button2.Location = new System.Drawing.Point(246, 305);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(274, 112);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "HUERTAS ECOLOGICAS";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnHE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnHE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHE.Location = new System.Drawing.Point(246, 305);
+            this.btnHE.Name = "btnHE";
+            this.btnHE.Size = new System.Drawing.Size(274, 112);
+            this.btnHE.TabIndex = 3;
+            this.btnHE.Text = "HUERTAS ECOLOGICAS";
+            this.btnHE.UseVisualStyleBackColor = false;
+            this.btnHE.Click += new System.EventHandler(this.button2_Click);
             // 
-            // btnUsuario
+            // btnClientes
             // 
-            this.btnUsuario.Location = new System.Drawing.Point(246, 69);
-            this.btnUsuario.Name = "btnUsuario";
-            this.btnUsuario.Size = new System.Drawing.Size(274, 112);
-            this.btnUsuario.TabIndex = 4;
-            this.btnUsuario.Text = "USUARIOS";
-            this.btnUsuario.UseVisualStyleBackColor = true;
-            this.btnUsuario.Click += new System.EventHandler(this.button3_Click);
+            this.btnClientes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClientes.Location = new System.Drawing.Point(246, 69);
+            this.btnClientes.Name = "btnClientes";
+            this.btnClientes.Size = new System.Drawing.Size(274, 112);
+            this.btnClientes.TabIndex = 4;
+            this.btnClientes.Text = "CLIENTES";
+            this.btnClientes.UseVisualStyleBackColor = false;
+            this.btnClientes.Click += new System.EventHandler(this.button3_Click);
             // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnUsuario);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnClientes);
+            this.Controls.Add(this.btnHE);
+            this.Controls.Add(this.btnRepartidor);
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Principal";
-            this.Text = "WATECHMELON";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Ventana Principal";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button btnUsuario;
+        private System.Windows.Forms.Button btnRepartidor;
+        private System.Windows.Forms.Button btnHE;
+        private System.Windows.Forms.Button btnClientes;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;

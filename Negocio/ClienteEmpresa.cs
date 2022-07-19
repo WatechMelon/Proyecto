@@ -21,12 +21,6 @@ namespace Negocio
             this.rut = rut;
         }
 
-        public ClienteEmpresa(object idCliente1, object value)
-        {
-            this.idCliente1 = idCliente1;
-            this.value = value;
-        }
-
         public ClienteEmpresa(int idCliente, string email, string pass, string barrio, int telefono, string calle, int numero, string esquina, int rut) : base(idCliente, email, pass, barrio, telefono, calle, numero, esquina)
         {
             Rut = rut;

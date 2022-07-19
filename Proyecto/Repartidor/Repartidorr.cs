@@ -8,13 +8,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Negocio;
+using Vista.Repartidor;
 namespace Vista
 {
     public partial class Repartidorr : Form
     {
+        Pedidos pedidos;
         public Repartidorr()
         {
-
+            pedidos = new Pedidos();
             InitializeComponent();
         }
 
@@ -33,13 +35,16 @@ namespace Vista
         {
             try
             {
-                if (Convert.ToInt32(txtIdRepartidor) == 84321 && txtPass.Text == "Contra")
+                if (Convert.ToInt32(txtIdRepartidor.Text) == 84321 && txtPass.Text == "Contra")
                 {
                     MessageBox.Show("Te has logueado exitosamente");
+                    this.Hide();
+                    pedidos.ShowDialog();
+                    this.Show();
                 }
                 else
                 {
-                    MessageBox.Show("Error, Contraseña o Email incorrectos");
+                    MessageBox.Show("Error, Contraseña o ID incorrectos");
                 }
             }
             catch(Exception s)

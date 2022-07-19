@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Repartidorr));
-            this.txtEmailR = new System.Windows.Forms.TextBox();
             this.txtPass = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -38,13 +37,6 @@
             this.button2 = new System.Windows.Forms.Button();
             this.txtIdRepartidor = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
-            // 
-            // txtEmailR
-            // 
-            this.txtEmailR.Location = new System.Drawing.Point(0, 0);
-            this.txtEmailR.Name = "txtEmailR";
-            this.txtEmailR.Size = new System.Drawing.Size(100, 20);
-            this.txtEmailR.TabIndex = 9;
             // 
             // txtPass
             // 
@@ -124,9 +116,10 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtPass);
-            this.Controls.Add(this.txtEmailR);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Repartidorr";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Repartidor";
             this.Load += new System.EventHandler(this.Repartidor_Load);
             this.ResumeLayout(false);
@@ -135,8 +128,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox txtEmailR;
         private System.Windows.Forms.TextBox txtPass;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;

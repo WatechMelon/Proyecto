@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Huerta\ElegirHuerta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Huerta\ElegirHuerta.Designer.cs">
+      <DependentUpon>ElegirHuerta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Huerta\HuertaE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Huerta\HuertaE.Designer.cs">
+      <DependentUpon>HuertaE.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -56,12 +68,6 @@
     </Compile>
     <Compile Include="Repartidor\Pedidos.Designer.cs">
       <DependentUpon>Pedidos.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Usuarios\Productos\Primavera.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Usuarios\Productos\Primavera.Designer.cs">
-      <DependentUpon>Primavera.cs</DependentUpon>
     </Compile>
     <Compile Include="Huerta\LoginHuerta.cs">
       <SubType>Form</SubType>
@@ -81,60 +87,45 @@
     <Compile Include="Repartidor\Repartidorr.Designer.cs">
       <DependentUpon>Repartidorr.cs</DependentUpon>
     </Compile>
-    <Compile Include="Usuarios\Productos\Estaciones.cs">
+    <Compile Include="Clientes\Productos\Productos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Usuarios\Productos\Estaciones.Designer.cs">
-      <DependentUpon>Estaciones.cs</DependentUpon>
+    <Compile Include="Clientes\Productos\Productos.Designer.cs">
+      <DependentUpon>Productos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Usuarios\Productos\Invierno.cs">
+    <Compile Include="Clientes\Clientes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Usuarios\Productos\Invierno.Designer.cs">
-      <DependentUpon>Invierno.cs</DependentUpon>
+    <Compile Include="Clientes\Clientes.Designer.cs">
+      <DependentUpon>Clientes.cs</DependentUpon>
     </Compile>
-    <Compile Include="Usuarios\Productos\Otoño.cs">
+    <Compile Include="Clientes\Registro.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Usuarios\Productos\Otoño.Designer.cs">
-      <DependentUpon>Otoño.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Usuarios\Productos\Verano.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Usuarios\Productos\Verano.Designer.cs">
-      <DependentUpon>Verano.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Usuarios\Usuarios.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Usuarios\Usuarios.Designer.cs">
-      <DependentUpon>Usuarios.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Usuarios\Registro.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Usuarios\Registro.Designer.cs">
+    <Compile Include="Clientes\Registro.Designer.cs">
       <DependentUpon>Registro.cs</DependentUpon>
     </Compile>
-    <Compile Include="Usuarios\Login.cs">
+    <Compile Include="Clientes\Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Usuarios\Login.Designer.cs">
+    <Compile Include="Clientes\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Huerta\ElegirHuerta.resx">
+      <DependentUpon>ElegirHuerta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Huerta\HuertaE.resx">
+      <DependentUpon>HuertaE.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Huerta\LoginHuerta.resx">
       <DependentUpon>LoginHuerta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Repartidor\Pedidos.resx">
       <DependentUpon>Pedidos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Usuarios\Productos\Primavera.resx">
-      <DependentUpon>Primavera.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Usuarios\Login.resx">
+    <EmbeddedResource Include="Clientes\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Principal.resx">
@@ -143,22 +134,13 @@
     <EmbeddedResource Include="Repartidor\Repartidorr.resx">
       <DependentUpon>Repartidorr.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Usuarios\Productos\Estaciones.resx">
-      <DependentUpon>Estaciones.cs</DependentUpon>
+    <EmbeddedResource Include="Clientes\Productos\Productos.resx">
+      <DependentUpon>Productos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Usuarios\Productos\Invierno.resx">
-      <DependentUpon>Invierno.cs</DependentUpon>
+    <EmbeddedResource Include="Clientes\Clientes.resx">
+      <DependentUpon>Clientes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Usuarios\Productos\Otoño.resx">
-      <DependentUpon>Otoño.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Usuarios\Productos\Verano.resx">
-      <DependentUpon>Verano.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Usuarios\Usuarios.resx">
-      <DependentUpon>Usuarios.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Usuarios\Registro.resx">
+    <EmbeddedResource Include="Clientes\Registro.resx">
       <DependentUpon>Registro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

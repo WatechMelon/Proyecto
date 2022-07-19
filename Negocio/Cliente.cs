@@ -8,14 +8,14 @@ namespace Negocio
 {
     public class Cliente
     {
-        public int idCliente { get; set; }
-        public String email { get; set; }
-        public String pass { get; set; }
+        public int IdCliente { get; set; }
+        public String Email { get; set; }
+        public String Pass { get; set; }
         public String Barrio { get; set; }
-        public int telefono { get; set; }
-        public String calle { get; set; }
-        public int numero { get; set; }
-        public String esquina { get; set; }
+        public int Telefono { get; set; }
+        public String Calle { get; set; }
+        public int Numero { get; set; }
+        public String Esquina { get; set; }
 
 
 
@@ -25,14 +25,14 @@ namespace Negocio
 
         public Cliente(int idCliente, string email, string pass, string barrio, int telefono, string calle, int numero, string esquina)
         {
-            this.idCliente = idCliente;
-            this.email = email;
-            this.pass = pass;
+            this.IdCliente = idCliente;
+            this.Email = email;
+            this.Pass = pass;
             Barrio = barrio;
-            this.telefono = telefono;
-            this.calle = calle;
-            this.numero = numero;
-            this.esquina = esquina;
+            this.Telefono = telefono;
+            this.Calle = calle;
+            this.Numero = numero;
+            this.Esquina = esquina;
         }
     }
 
